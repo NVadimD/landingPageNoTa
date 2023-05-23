@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;700&display=swap');
+
+
+
+
+
+
+
+/* ------------------------------------------------Общие вещи---------------------------------------------------- */
+
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.36;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-size: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+a:active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------header--------------------------------------------------- */
+.header_container {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.login {
+    display: flex;
+    align-items: center;
+}
+.login__text {
+    margin-left: 12px;
+}
+.logo__text {
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------main__Welcome----------------------------------------------------- */
+.welcome__container {
+    position: relative;
+}
+
+.welcome__container::before {
+    content: "";
+    position: absolute;
+    
+    right: -120px;
+    top: -310px;
+    z-index: -1;
+
+    width: 660px;
+    height: 780px;
+    transform: rotate(-105deg);
+
+    background-image: url('./img/bg-welcome.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    height: calc(100vh - 109px);
+    display: flex;
+    flex-direction: column;
+}
+.welcomeMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.iphone1 {
+    margin-top: -20px;
+    margin-right: 0px;
+    max-width: 458px;
+}
+
+.welcomeMain .content__title {
+    margin-top: 154px;
+    font-size: 64px;
+    line-height: 1.09;
+}
+
+.welcomeMain .content__text {
+    position: relative;
+
+    font-size: 20px;
+    margin-left: 105px;
+    margin-top: 100px;
+    max-width: 380px;    
+}
+
+.welcomeMain .content__text::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: -110px;
+    bottom: 50%;
+
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(50px);
+}
+
+.welcomeMain .content__text::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 4px;
+    background-color: #fff;
+    left: -136px;
+    bottom: 60px;
+    transform: rotate(120deg);
+}
+
+.welcomeFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcomeFooter__title {
+    font-size: 35px;
+}
+
+.socialBox {
+    margin-right: 50px;
+    display: flex;
+    gap: 28px;
+}
