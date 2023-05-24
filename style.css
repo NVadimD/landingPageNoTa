@@ -68,6 +68,7 @@ a:active {
 
 
 /* -------------------------------------------------------header--------------------------------------------------- */
+
 .header {
     height: 109px;
 }
@@ -100,6 +101,7 @@ a:active {
 
 
 /* -------------------------------------------------------main__Welcome----------------------------------------------------- */
+
 .welcome__container {
     position: relative;
 }
@@ -198,6 +200,7 @@ a:active {
 
 
 /* -------------------------------------------------------main__Mission----------------------------------------------------- */
+
 .mission__container {
     position: relative;
     height: 840px;
@@ -255,6 +258,11 @@ a:active {
     flex-direction: row-reverse;
 }
 
+.pictureCommon {
+    display: block;
+    margin: 0 auto;
+}
+
 .common__content {
     width: 410px;
 }
@@ -271,4 +279,60 @@ a:active {
     background-repeat: no-repeat;
     background-position: center;
     padding: 60px 0;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------main__ctaDesk----------------------------------------------------- */
+
+.ctaDesk__title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    margin-bottom: 33px;
+    text-align: center; 
+}
+
+.ctaDesk__socialBox {
+    display: flex;
+    justify-content: space-between;
+    width: 611px;
+    margin: 0 auto;
+    padding-bottom: 125px;   
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------footer-------------------------------------------------------- */
+
+
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.footer__container::after {
+    content: "";
+    position: absolute;
+    width: 405.99px;
+    height: 411.6px;
+    bottom: -14px;
+
+    transform: rotate(6deg);
+
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(125px);
+}
+
+.lastSign {
+    font-weight: 700;
 }

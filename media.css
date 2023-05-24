@@ -1,0 +1,154 @@
+
+@media (width <= 940px) {
+
+    /* Хедер + велком================================================== */ 
+
+
+
+    .header_container {
+        justify-content: space-between;
+    }
+    .login__img {
+        display: none;
+    }
+    .login__text {
+        text-decoration: underline;
+    }
+
+    .iphone1 {
+        max-width: 400px;
+    }
+
+    .welcomeMain .content__text::before {
+        display: none;
+    }
+    .welcomeMain .content__text::after {
+        display: none;
+    }
+
+    .welcomeMain .content__text {
+        margin-left: 0;
+    }
+
+    .welcomeFooter {
+        flex-direction: column;
+    }
+    .welcomeFooter__socialBox {
+        margin: 20px auto 0;
+    }
+
+
+
+        /* Миссион================================================== */ 
+
+        .pictureMission {
+            right: 68%;
+        }
+    
+
+}
+
+@media (width <= 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+        /* Хедер + велком================================================== */ 
+
+    .iphone1 {
+        position: absolute;
+        right: -250px;
+    }
+    .welcomeMain .content__title {
+        max-width: 480px;
+    }
+    .welcomeFooter {
+        margin-top: 80px;
+    }
+
+
+            /* Миссион================================================== */ 
+
+    .mission__container {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mission__title::after {
+        content: "";
+        position: absolute;
+        width: 85px;
+        height: 85px;
+    
+        top: -18px;
+        left: -10px;
+        
+        background: #F101BF;
+        opacity: 0.7;
+        filter: blur(50px);
+    }
+
+    .mission__content{
+        position: static;   
+        padding: 80px 0 0;
+        width: 315px;
+        margin: 0 auto;
+    }
+    .pictureMission {
+        position: static;
+        transform: rotate(0deg);
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Common scaner/code================================================== */ 
+
+    .common__container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0px;
+    }
+    
+    .common__code .common__container {
+        flex-direction: column-reverse;
+    }
+    
+    .common__content {
+        width: 410px;
+        margin: 0 auto;
+        padding-bottom: 26px;
+    }
+
+    .common__scaner {
+        background-image: initial;
+    }
+    .common__code {
+        background-image: initial;
+    }
+    
+    .common__scaner .common__content {
+        background-image: url('./img/bg-scanner.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 140px 0 50px;
+    }
+    
+    .common__code .common__content {
+        background-image: url('./img/bg-code.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 140px 0 50px;
+    }
+
+}
